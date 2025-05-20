@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Joke Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background-color: #f0f0f0;
+    }
+
+    #joke-box {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 10px;
+      max-width: 500px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>😂 Random Joke Generator</h1>
+
+  <div id="joke-box">
+    <p id="setup">Click the button to get a joke!</p>
+    <p id="punchline" style="font-weight: bold;"></p>
+  </div>
+
+  <button onclick="getJoke()">Get Joke</button>
+
+  <script src="random.js"></script>
+</body>
+</html>
